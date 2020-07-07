@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "jsx-quotes": ["error", "prefer-double"]
+  },
+  "globals": {
+    "fetch": "readonly"
+  }
+}
