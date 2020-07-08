@@ -15,6 +15,7 @@ ozanilbey's isomorphic web application boilerplate
 ### To-be-supported
 * React Router
 * React Helmet
+* React Context API
 * PropTypes
 * GraphQL
 * MongoDB
