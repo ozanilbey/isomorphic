@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom'
 
 // Pages
 import Home from '~/pages/home/Home'
+import Error from '~/pages/error/Error'
 import Features from '~/pages/features/Features'
 
 // Style
@@ -23,6 +24,9 @@ const App = () => {
         <Features />
       </Route>
       {/* Error */}
+      <Route>
+        <Error />
+      </Route>
     </Switch>
   )
 }
