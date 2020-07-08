@@ -1,12 +1,30 @@
 // Modules
 import React from 'react'
+import { Route, Switch } from 'react-router-dom'
+
+// Pages
+import Home from '~/pages/home/Home'
+import Features from '~/pages/features/Features'
 
 // Style
 import '~/styles/index.less'
 
 // Application
 const App = () => {
-  return <p>Hello, World!</p>
+  // Render
+  return (
+    <Switch>
+      {/* Home */}
+      <Route exact path="/">
+        <Home />
+      </Route>
+      {/* Features */}
+      <Route path="/features/:feature?">
+        <Features />
+      </Route>
+      {/* Error */}
+    </Switch>
+  )
 }
 
 // Export
