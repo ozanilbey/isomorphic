@@ -1,6 +1,7 @@
 // Modules
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 // Subpages
 import Layout from './layout/Layout'
@@ -22,6 +23,9 @@ const Features = () => {
     default:
       return (
         <main data-page="features">
+          <Helmet>
+            <title>Isomorphic | Features</title>
+          </Helmet>
           <h1>Features</h1>
           <p>This is <b>Features</b> page. There is also <Link to="/">Home</Link> page.</p>
           <br />
