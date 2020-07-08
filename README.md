@@ -9,12 +9,12 @@ ozanilbey's isomorphic web application boilerplate
 * Webpack
 * Express
 * React
+* React Router
+* React Helmet
 * LESS
 * Standard/ESLint
 
 ### To-be-supported
-* React Router
-* React Helmet
 * React Context API
 * PropTypes
 * GraphQL
@@ -24,7 +24,6 @@ ozanilbey's isomorphic web application boilerplate
 * JWT
 
 ### To-be-included
-* Sample pages
 * Sample content
 * Basic layout
 * Custom UI library
