@@ -10,6 +10,7 @@ import './Error.less'
 const Error = () => {
   // Data
   const { pathname } = useLocation()
+
   // Render
   return (
     <main data-page="error">

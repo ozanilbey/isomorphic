@@ -14,6 +14,7 @@ import './Features.less'
 const Features = () => {
   // Data
   const { feature } = useParams()
+
   // Render
   switch (feature) {
     case 'layout':
