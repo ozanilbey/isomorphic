@@ -1,0 +1,33 @@
+section[data-layout="section"] {}
+
+// Generic
+[data-layout="section"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &.height-auto {
+    height: auto;
+  }
+  &.height-full {
+    height: 100vh;
+  }
+  &.spacing-none {
+    padding: 0;
+  }
+  &.spacing-xsmall {
+    padding: 1rem 0;
+  }
+  &.spacing-small {
+    padding: 2rem 0;
+  }
+  &.spacing-medium {
+    padding: 3rem 0;
+  }
+  &.spacing-large {
+    padding: 4rem 0;
+  }
+  &.spacing-xlarge {
+    padding: 5rem 0;
+  }
+}
