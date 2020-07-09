@@ -10,11 +10,12 @@ ozanilbey's isomorphic web application boilerplate
 * Express
 * React
 * React Router
-* React Helmet
+* React Helmet (on client-side rendering)
 * LESS
 * Standard/ESLint
 
 ### To-be-supported
+* React Helmet (on server-side rendering)
 * React Context API
 * PropTypes
 * GraphQL
