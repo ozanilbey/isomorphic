@@ -12,7 +12,7 @@ const Layout = () => {
   return (
     <main data-page="features" data-subpage="layout">
       <Helmet>
-        <title>Isomorphic | Features</title>
+        <title>Isomorphic | Layout</title>
       </Helmet>
       <h1>Layout</h1>
       <p>This is <b>Layout</b> page, a subpage of <Link to="/features">Features</Link> page.</p>
