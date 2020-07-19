@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 // Components
 import Container from '~/components/layout/container/Container'
+import Heading from '~/components/type/heading/Heading'
 import Page from '~/components/layout/page/Page'
 
 // Subpages
@@ -33,7 +34,7 @@ const Features = () => {
           </Helmet>
           <Page.Header name="introduction">
             <Container>
-              <h1>Features</h1>
+              <Heading displaySize="big">Features</Heading>
               <p>This is <b>Features</b> page. There is also <Link to="/">Home</Link> page.</p>
             </Container>
           </Page.Header>

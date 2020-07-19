@@ -23,7 +23,7 @@ const Typography = () => {
       </Helmet>
       <Page.Header name="introduction">
         <Container>
-          <h1>Typography</h1>
+          <Heading displaySize="big">Typography</Heading>
           <p>This is <b>Typography</b> page, a subpage of <Link to="/features">Features</Link> page.</p>
         </Container>
       </Page.Header>

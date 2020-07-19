@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 // Components
 import Container from '~/components/layout/container/Container'
+import Heading from '~/components/type/heading/Heading'
 import Page from '~/components/layout/page/Page'
 
 // Style
@@ -25,7 +26,7 @@ const Error = () => {
         isFullScreen
         name="introduction">
         <Container>
-          <h1>Error</h1>
+          <Heading displaySize="big">Error</Heading>
           <p><mark>{pathname}</mark> cannot be found!</p>
           <p>This is <b>Error</b> page. Let‘s go to <Link to="/">Home</Link> page.</p>
         </Container>

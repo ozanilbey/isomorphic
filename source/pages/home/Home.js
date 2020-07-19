@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 // Components
 import Container from '~/components/layout/container/Container'
+import Heading from '~/components/type/heading/Heading'
 import Page from '~/components/layout/page/Page'
 
 // Style
@@ -20,7 +21,7 @@ const Home = () => {
       </Helmet>
       <Page.Header name="introduction">
         <Container>
-          <h1>Home</h1>
+          <Heading displaySize="big">Home</Heading>
           <p>This is <b>Home</b> page. There is also <Link to="/features">Features</Link> page.</p>
         </Container>
       </Page.Header>
