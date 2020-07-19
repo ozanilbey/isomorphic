@@ -5,8 +5,7 @@ import { Helmet } from 'react-helmet'
 
 // Components
 import Container from '~/components/layout/container/Container'
-import Header from '~/components/layout/header/Header'
-import Section from '~/components/layout/section/Section'
+import Page from '~/components/layout/page/Page'
 
 // Subpages
 import Layout from './layout/Layout'
@@ -28,17 +27,17 @@ const Features = () => {
       return <Typography />
     default:
       return (
-        <main data-page="features">
+        <Page name="features">
           <Helmet>
             <title>Isomorphic | Features</title>
           </Helmet>
-          <Header>
+          <Page.Header name="introduction">
             <Container>
               <h1>Features</h1>
               <p>This is <b>Features</b> page. There is also <Link to="/">Home</Link> page.</p>
             </Container>
-          </Header>
-          <Section>
+          </Page.Header>
+          <Page.Section>
             <Container>
               <b>List of features</b>
               <ul>
@@ -46,8 +45,8 @@ const Features = () => {
                 <li><Link to="/features/typography">Typography</Link></li>
               </ul>
             </Container>
-          </Section>
-        </main>
+          </Page.Section>
+        </Page>
       )
   }
 }

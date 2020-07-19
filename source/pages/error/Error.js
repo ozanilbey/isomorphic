@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 
 // Components
 import Container from '~/components/layout/container/Container'
-import Header from '~/components/layout/header/Header'
+import Page from '~/components/layout/page/Page'
 
 // Style
 import './Error.less'
@@ -17,18 +17,20 @@ const Error = () => {
 
   // Render
   return (
-    <main data-page="error">
+    <Page name="error">
       <Helmet>
         <title>Isomorphic | Error</title>
       </Helmet>
-      <Header isFullScreen>
+      <Page.Header
+        isFullScreen
+        name="introduction">
         <Container>
           <h1>Error</h1>
           <p><mark>{pathname}</mark> cannot be found!</p>
           <p>This is <b>Error</b> page. Let‘s go to <Link to="/">Home</Link> page.</p>
         </Container>
-      </Header>
-    </main>
+      </Page.Header>
+    </Page>
   )
 }
 

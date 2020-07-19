@@ -5,9 +5,8 @@ import { Helmet } from 'react-helmet'
 
 // Components
 import Container from '~/components/layout/container/Container'
-import Header from '~/components/layout/header/Header'
-import Section from '~/components/layout/section/Section'
 import Heading from '~/components/type/heading/Heading'
+import Page from '~/components/layout/page/Page'
 
 // Style
 import './Typography.less'
@@ -16,19 +15,19 @@ import './Typography.less'
 const Typography = () => {
   // Render
   return (
-    <main data-page="features" data-subpage="typography">
+    <Page
+      name="typography"
+      parentName="features">
       <Helmet>
         <title>Isomorphic | Typography</title>
       </Helmet>
-      <Header
-        name="introduction"
-        spacing="large">
+      <Page.Header name="introduction">
         <Container>
           <h1>Typography</h1>
           <p>This is <b>Typography</b> page, a subpage of <Link to="/features">Features</Link> page.</p>
         </Container>
-      </Header>
-      <Section name="basic-headings">
+      </Page.Header>
+      <Page.Section name="basic-headings">
         <Container>
           <Heading rank={6}>H6: Heading 6</Heading>
           <code className="text-line-single">{'<Heading rank={6} />'}</code>
@@ -51,8 +50,8 @@ const Typography = () => {
           <Heading rank={1} displaySize="biggest">H1: Heading 1 (Biggest)</Heading>
           <code className="text-line-single">{'<Heading rank={1} displaySize="biggest" />'}</code>
         </Container>
-      </Section>
-    </main>
+      </Page.Section>
+    </Page>
   )
 }
 
