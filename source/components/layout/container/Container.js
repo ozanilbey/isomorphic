@@ -11,7 +11,9 @@ import './Container.less'
 // Component > Layout: Container
 const Container = props => {
   // Data
-  const className = getClassName(props, {})
+  const className = getClassName(props, {
+    width: props.isMaximumWidth ? 'maximum' : null
+  })
 
   // Render
   return (
@@ -28,7 +30,11 @@ const Container = props => {
 Container.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  isMaximumWidth: PropTypes.bool,
   name: PropTypes.string
+}
+Container.defaultProps = {
+  isMaximumWidth: false
 }
 
 // Export
