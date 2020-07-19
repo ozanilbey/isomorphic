@@ -1,0 +1,7 @@
+export const SIZING_ALTERNATIVES = ['auto', 'xs', 's', 'm', 'l', 'xl']
+export const BOX_ALIGNMENT_HORIZONTAL_OPTIONS = ['start', 'center', 'end', 'equal']
+export const BOX_ALIGNMENT_VERTICAL_OPTIONS = ['top', 'middle', 'bottom', 'stretch']
+export const BLOCK_OFFSET_OPTIONS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11]
+export const BLOCK_SIZE_OPTIONS = ['auto', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+export const SPACING_OPTIONS = ['none', 'xsmall', 'small', 'medium', 'large', 'xlarge']
+export const TEXT_ALIGNMENT_OPTIONS = ['left', 'center', 'right']
