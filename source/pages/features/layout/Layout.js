@@ -10,7 +10,7 @@ import Page from '~/components/layout/page/Page'
 // Style
 import './Layout.less'
 
-// Subpage: Layout
+// Page: Features > Layout
 const Layout = () => {
   // Render
   return (

@@ -8,7 +8,7 @@ import { getClassName } from '~/utilities/component'
 // Style
 import './Heading.less'
 
-// Component > Typography: Heading
+// Component: Typography > Heading
 const Heading = props => {
   // Data
   const TagName = `h${props.rank}`

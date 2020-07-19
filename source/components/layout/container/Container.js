@@ -8,7 +8,7 @@ import { getClassName } from '~/utilities/component'
 // Style
 import './Container.less'
 
-// Component > Layout: Container
+// Component: Layout > Container
 const Container = props => {
   // Data
   const className = getClassName(props, {

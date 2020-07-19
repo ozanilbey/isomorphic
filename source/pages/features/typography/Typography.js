@@ -11,7 +11,7 @@ import Page from '~/components/layout/page/Page'
 // Style
 import './Typography.less'
 
-// Subpage: Typography
+// Page: Features > Typography
 const Typography = () => {
   // Render
   return (
