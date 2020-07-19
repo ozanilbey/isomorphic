@@ -76,49 +76,49 @@ code {
 // Responsive
 
 /* Window Width < 320 */
-@media only screen and (max-width: 319px) {
+@media only screen and (max-width: @breakpoints[xxsmall-limit-superior]) {
   html {
     font-size: 12px;
   }
 }
 
 /* 320 ≤ Window Width < 480 */
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: @breakpoints[xsmall-limit-inferior]) and (max-width: @breakpoints[xsmall-limit-superior]) {
   html {
     font-size: 13px;
   }
 }
 
 /* 480 ≤ Window Width < 768 */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: @breakpoints[small-limit-inferior]) and (max-width: @breakpoints[small-limit-superior]) {
   html {
     font-size: 14px;
   }
 }
 
 /* 768 ≤ Window Width < 1024 */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: @breakpoints[medium-limit-inferior]) and (max-width: @breakpoints[medium-limit-superior]) {
   html {
     font-size: 15px;
   }
 }
 
 /* 1024 ≤ Window Width < 1280 */
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+@media only screen and (min-width: @breakpoints[large-limit-inferior]) and (max-width: @breakpoints[large-limit-superior]) {
   html {
     font-size: 16px;
   }
 }
 
 /* 1280 ≤ Window Width < 1440 */
-@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+@media only screen and (min-width: @breakpoints[xlarge-limit-inferior]) and (max-width: @breakpoints[xlarge-limit-superior]) {
   html {
     font-size: 17px;
   }
 }
 
 /* 1440 ≤ Window Width */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: @breakpoints[xxlarge-limit-inferior]) {
   html {
     font-size: 18px;
   }
