@@ -41,7 +41,7 @@ const Layout = () => {
             </Flex.Item>
             <Flex.Item>
               <div>Aligned to top</div>
-              <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+              <div>Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
             </Flex.Item>
             <Flex.Item>
               <div>Aligned to top</div>
@@ -58,7 +58,7 @@ const Layout = () => {
             </Flex.Item>
             <Flex.Item>
               <div>Aligned to middle</div>
-              <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+              <div>Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
             </Flex.Item>
             <Flex.Item>
               <div>Aligned to middle</div>
@@ -75,7 +75,7 @@ const Layout = () => {
             </Flex.Item>
             <Flex.Item>
               <div>Aligned to bottom</div>
-              <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+              <div>Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
             </Flex.Item>
             <Flex.Item>
               <div>Aligned to bottom</div>
@@ -92,7 +92,7 @@ const Layout = () => {
             </Flex.Item>
             <Flex.Item>
               <div>Stretched to top and bottom</div>
-              <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+              <div>Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
             </Flex.Item>
             <Flex.Item>
               <div>Stretched to top and bottom</div>
