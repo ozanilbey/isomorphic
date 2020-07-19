@@ -5,23 +5,31 @@ import PropTypes from 'prop-types'
 // Utilities
 import { getClassName } from '~/utilities/component'
 
+// Constants
+import {
+  BOX_ALIGNMENT_VERTICAL_OPTIONS,
+  SPACING_OPTIONS
+} from '~/constants/generic'
+
 // Style
 import './Section.less'
 
-// Component > Layout: Section
+// Component: Layout > Section
 const Section = props => {
   // Data
-  const TagName = props.tag
+  const TagName = props.semanticTag
   const className = getClassName(props, {
+    screen: props.isFullScreen ? 'full' : null,
     spacing: props.spacing,
-    height: props.isFullScreen ? 'full' : 'auto'
+    align: props.align
   })
+  const semanticTagProperty = { [`data-${props.semanticTag}`]: props.name }
 
   // Render
   return (
     <TagName
-      data-name={props.name}
       data-layout="section"
+      {...semanticTagProperty}
       className={className}>
       {props.children}
     </TagName>
@@ -30,17 +38,16 @@ const Section = props => {
 
 // Properties
 Section.propTypes = {
+  align: PropTypes.oneOf(BOX_ALIGNMENT_VERTICAL_OPTIONS),
   children: PropTypes.node,
   className: PropTypes.string,
   isFullScreen: PropTypes.bool,
   name: PropTypes.string,
-  spacing: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
-  tag: PropTypes.oneOf(['header', 'section', 'article', 'footer'])
+  semanticTag: PropTypes.oneOf(['header', 'section', 'footer']),
+  spacing: PropTypes.oneOf(SPACING_OPTIONS)
 }
 Section.defaultProps = {
-  isFullScreen: false,
-  spacing: 'medium',
-  tag: 'section'
+  semanticTag: 'section'
 }
 
 // Export
