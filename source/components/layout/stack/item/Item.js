@@ -27,7 +27,7 @@ const Item = props => {
   // Render
   return (
     <div
-      data-layout="flex-item"
+      data-layout="stack-item"
       className={className}>
       {props.children}
     </div>

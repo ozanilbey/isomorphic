@@ -16,10 +16,10 @@ import {
 } from '~/constants/generic'
 
 // Style
-import './Flex.less'
+import './Stack.less'
 
-// Component: Layout > Flex
-const Flex = props => {
+// Component: Layout > Stack
+const Stack = props => {
   // Data
   const className = getClassName(props, {
     wrap: props.willWrap
@@ -34,7 +34,7 @@ const Flex = props => {
   // Methods
   const renderChildren = children => {
     return React.Children.map(children, child => {
-      if (!child.props || child.type.displayName !== 'Flex.Item') return child
+      if (!child.props || child.type.displayName !== 'Stack.Item') return child
       if (child.props.isHidden) return null
       return cloneElement(child, {})
     })
@@ -43,7 +43,7 @@ const Flex = props => {
   // Render
   return (
     <div
-      data-layout="flex"
+      data-layout="stack"
       className={className}>
       {renderChildren(props.children)}
     </div>
@@ -51,7 +51,7 @@ const Flex = props => {
 }
 
 // Properties
-Flex.propTypes = {
+Stack.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   horizontal: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
@@ -78,8 +78,8 @@ Flex.propTypes = {
   willWrap: PropTypes.bool,
   willWrapReverse: PropTypes.bool
 }
-Flex.Item = Item
-Flex.Item.displayName = 'Flex.Item'
+Stack.Item = Item
+Stack.Item.displayName = 'Stack.Item'
 
 // Export
-export default Flex
+export default Stack
