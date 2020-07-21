@@ -118,13 +118,13 @@
   .align-vertical-xs-stretch {
     align-items: stretch;
   }
-  .align-horizontal-xs-start {
+  .align-horizontal-xs-left {
     justify-content: flex-start;
   }
   .align-horizontal-xs-center {
     justify-content: center;
   }
-  .align-horizontal-xs-end {
+  .align-horizontal-xs-right {
     justify-content: flex-end;
   }
   .align-horizontal-xs-equal {
@@ -141,5 +141,27 @@
   }
   .text-align-xs-justified {
     text-align: justify;
+  }
+
+  // Direction
+  [dir="rtl"], [style*="direction:rtl"], [style*="direction: rtl"] {
+    &, & * {
+      &.align-horizontal-xs-left {
+        justify-content: flex-end;
+      }
+      &.align-horizontal-xs-right {
+        justify-content: flex-start;
+      }
+    }
+  }
+  [dir="ltr"], [style*="direction:ltr"], [style*="direction: ltr"] {
+    &, & * {
+      &.align-horizontal-xs-left {
+        justify-content: flex-start;
+      }
+      &.align-horizontal-xs-right {
+        justify-content: flex-end;
+      }
+    }
   }
 }

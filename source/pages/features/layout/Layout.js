@@ -107,7 +107,7 @@ const Layout = () => {
         </Container>
         <Container>
           <Heading rank={3}>Start</Heading>
-          <Flex horizontal="start">
+          <Flex horizontal="left">
             <Flex.Item size={3}>
               <div>Justified to start</div>
             </Flex.Item>
@@ -135,7 +135,7 @@ const Layout = () => {
         </Container>
         <Container>
           <Heading rank={3}>End</Heading>
-          <Flex horizontal="end">
+          <Flex horizontal="right">
             <Flex.Item size={3}>
               <div>Stacked right</div>
             </Flex.Item>

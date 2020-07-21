@@ -22,13 +22,13 @@ import './Flex.less'
 const Flex = props => {
   // Data
   const className = getClassName(props, {
-    'align-vertical': props.vertical,
-    'align-horizontal': props.horizontal,
     wrap: props.willWrap
       ? props.willWrapReverse ? 'reverse' : null
       : 'disabled',
     spacing: props.spacing,
     ...getResponsiveData(props, 'text')
+    ...getResponsiveData(props, 'horizontal', label => `align-${label}`),
+    ...getResponsiveData(props, 'vertical', label => `align-${label}`),
   })
 
   // Methods
