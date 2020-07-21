@@ -7,9 +7,9 @@ import { getClassName, getResponsiveData } from '~/utilities/component'
 
 // Constants
 import {
+  ALIGNMENT_HORIZONTAL_OPTIONS,
   BLOCK_OFFSET_OPTIONS,
-  BLOCK_SIZE_OPTIONS,
-  TEXT_ALIGNMENT_OPTIONS
+  BLOCK_SIZE_OPTIONS
 } from '~/constants/generic'
 
 // Style
@@ -50,12 +50,12 @@ Item.propTypes = {
   sizeS: PropTypes.oneOf(BLOCK_SIZE_OPTIONS),
   sizeXL: PropTypes.oneOf(BLOCK_SIZE_OPTIONS),
   sizeXS: PropTypes.oneOf(BLOCK_SIZE_OPTIONS),
-  text: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textL: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textM: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textS: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textXL: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textXS: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS)
+  text: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textL: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textM: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textS: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textXL: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textXS: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS)
 }
 
 // Export

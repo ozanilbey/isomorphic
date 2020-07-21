@@ -10,10 +10,9 @@ import { getClassName, getResponsiveData } from '~/utilities/component'
 
 // Constants
 import {
-  BOX_ALIGNMENT_HORIZONTAL_OPTIONS,
-  BOX_ALIGNMENT_VERTICAL_OPTIONS,
-  SPACING_OPTIONS,
-  TEXT_ALIGNMENT_OPTIONS
+  ALIGNMENT_HORIZONTAL_OPTIONS,
+  ALIGNMENT_VERTICAL_OPTIONS,
+  SPACING_OPTIONS
 } from '~/constants/generic'
 
 // Style
@@ -55,17 +54,27 @@ const Flex = props => {
 Flex.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  horizontal: PropTypes.oneOf(BOX_ALIGNMENT_HORIZONTAL_OPTIONS),
+  horizontal: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  horizontalL: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  horizontalM: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  horizontalS: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  horizontalXL: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  horizontalXS: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
   isHidden: PropTypes.bool,
   name: PropTypes.string,
   spacing: PropTypes.oneOf(SPACING_OPTIONS),
-  text: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textL: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textM: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textS: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textXL: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  textXS: PropTypes.oneOf(TEXT_ALIGNMENT_OPTIONS),
-  vertical: PropTypes.oneOf(BOX_ALIGNMENT_VERTICAL_OPTIONS),
+  text: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textL: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textM: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textS: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textXL: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  textXS: PropTypes.oneOf(ALIGNMENT_HORIZONTAL_OPTIONS),
+  vertical: PropTypes.oneOf(ALIGNMENT_VERTICAL_OPTIONS),
+  verticalL: PropTypes.oneOf(ALIGNMENT_VERTICAL_OPTIONS),
+  verticalM: PropTypes.oneOf(ALIGNMENT_VERTICAL_OPTIONS),
+  verticalS: PropTypes.oneOf(ALIGNMENT_VERTICAL_OPTIONS),
+  verticalXL: PropTypes.oneOf(ALIGNMENT_VERTICAL_OPTIONS),
+  verticalXS: PropTypes.oneOf(ALIGNMENT_VERTICAL_OPTIONS),
   willWrap: PropTypes.bool,
   willWrapReverse: PropTypes.bool
 }
