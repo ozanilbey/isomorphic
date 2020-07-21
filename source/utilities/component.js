@@ -10,10 +10,12 @@ export const getClassName = (props, items) => {
 }
 
 // Get values of a property at each breakpoint
-export const getResponsiveData = (source, property) => {
+export const getResponsiveData = (source, property, formatLabel) => {
   const list = {}
   SIZING_ALTERNATIVES.forEach(size => {
-    list[size === 'auto' ? property : `${property}-${size}`] = source[`${property}${size === 'auto' ? '' : size.toUpperCase()}`]
+    let label = size === 'auto' ? property : `${property}-${size}`
+    label = formatLabel ? formatLabel(label) : label
+    list[label] = source[`${property}${size === 'auto' ? '' : size.toUpperCase()}`]
   })
   return list
 }
