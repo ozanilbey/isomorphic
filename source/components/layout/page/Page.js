@@ -42,15 +42,11 @@ const Page = props => {
 
 // Properties
 Page.propTypes = {
-  alignment: PropTypes.oneOf(['top', 'center', 'bottom']),
   children: PropTypes.node,
   className: PropTypes.string,
-  isFullScreen: PropTypes.bool,
-  isHidden: PropTypes.bool,
   isZebraStriped: PropTypes.bool,
   name: PropTypes.string,
-  parentName: PropTypes.string,
-  spacing: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge'])
+  parentName: PropTypes.string
 }
 Page.Header = props => <Section semanticTag="header" {...props} />
 Page.Header.displayName = 'Header'
