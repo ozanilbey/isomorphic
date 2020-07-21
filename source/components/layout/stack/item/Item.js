@@ -21,7 +21,7 @@ const Item = props => {
   const className = getClassName(props, {
     ...getResponsiveData(props, 'offset'),
     ...getResponsiveData(props, 'size'),
-    ...getResponsiveData(props, 'text')
+    ...getResponsiveData(props, 'text', label => `${label}-align`)
   })
 
   // Render
