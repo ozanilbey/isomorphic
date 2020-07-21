@@ -26,9 +26,9 @@ const Flex = props => {
       ? props.willWrapReverse ? 'reverse' : null
       : 'disabled',
     spacing: props.spacing,
-    ...getResponsiveData(props, 'text')
     ...getResponsiveData(props, 'horizontal', label => `align-${label}`),
     ...getResponsiveData(props, 'vertical', label => `align-${label}`),
+    ...getResponsiveData(props, 'text', label => `${label}-align`)
   })
 
   // Methods
