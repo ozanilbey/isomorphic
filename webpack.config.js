@@ -55,7 +55,10 @@ module.exports = ({ base }) => {
         {
           test: /\.(css|less)?$/,
           use: [
-            { loader: MiniCssExtractPlugin.loader },
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: { hmr: !isProduction }
+            },
             { loader: 'css-loader' },
             {
               loader: 'postcss-loader',
