@@ -13,13 +13,17 @@
   },
   "extends": [
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "standard"
   ],
   "plugins": [
-    "react"
+    "react",
+    "react-hooks"
   ],
   "rules": {
-    "jsx-quotes": ["error", "prefer-double"]
+    "jsx-quotes": ["error", "prefer-double"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "globals": {
     "fetch": "readonly"
