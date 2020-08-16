@@ -11,7 +11,7 @@ import Features from '~/pages/features/Features'
 import '~/styles/index.less'
 
 // Application
-const App = () => {
+function App () {
   // Render
   return (
     <Switch>

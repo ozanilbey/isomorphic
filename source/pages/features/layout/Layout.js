@@ -13,7 +13,7 @@ import Page from '~/components/layout/page/Page'
 import './Layout.less'
 
 // Page: Features > Layout
-const Layout = () => {
+function Layout () {
   // Render
   return (
     <Page

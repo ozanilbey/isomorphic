@@ -19,7 +19,7 @@ import {
 import './Stack.less'
 
 // Component: Layout > Stack
-const Stack = props => {
+function Stack (props) {
   // Data
   const className = getClassName(props, {
     wrap: props.willWrap

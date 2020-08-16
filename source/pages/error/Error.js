@@ -12,7 +12,7 @@ import Page from '~/components/layout/page/Page'
 import './Error.less'
 
 // Page: Error
-const Error = () => {
+function Error () {
   // Data
   const { pathname } = useLocation()
 

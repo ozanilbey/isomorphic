@@ -12,7 +12,7 @@ import Page from '~/components/layout/page/Page'
 import './Home.less'
 
 // Page: Home
-const Home = () => {
+function Home () {
   // Render
   return (
     <Page name="home">

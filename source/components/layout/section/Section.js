@@ -15,7 +15,7 @@ import {
 import './Section.less'
 
 // Component: Layout > Section
-const Section = props => {
+function Section (props) {
   // Data
   const TagName = props.semanticTag
   const className = getClassName(props, {

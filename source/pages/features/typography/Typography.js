@@ -12,7 +12,7 @@ import Page from '~/components/layout/page/Page'
 import './Typography.less'
 
 // Page: Features > Typography
-const Typography = () => {
+function Typography () {
   // Render
   return (
     <Page

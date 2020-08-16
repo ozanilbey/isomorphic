@@ -9,7 +9,7 @@ import { getClassName } from '~/utilities/component'
 import './Container.less'
 
 // Component: Layout > Container
-const Container = props => {
+function Container (props) {
   // Data
   const className = getClassName(props, {
     width: props.isMaximumWidth ? 'maximum' : null

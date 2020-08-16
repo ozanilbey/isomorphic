@@ -16,7 +16,7 @@ import {
 import './Item.less'
 
 // Component: Layout > Flex > Item
-const Item = props => {
+function Item (props) {
   // Data
   const className = getClassName(props, {
     ...getResponsiveData(props, 'offset'),

@@ -9,7 +9,7 @@ import { getClassName } from '~/utilities/component'
 import './Heading.less'
 
 // Component: Typography > Heading
-const Heading = props => {
+function Heading (props) {
   // Data
   const TagName = `h${props.rank}`
   const className = getClassName(props, {

@@ -16,7 +16,7 @@ import Typography from './typography/Typography'
 import './Features.less'
 
 // Page: Features
-const Features = () => {
+function Features () {
   // Data
   const { feature } = useParams()
 

@@ -12,7 +12,7 @@ import { getClassName } from '~/utilities/component'
 import './Page.less'
 
 // Component: Layout > Page
-const Page = props => {
+function Page (props) {
   // Data
   const className = getClassName(props, {
     decoration: props.isZebraStriped ? 'zebra-stripes' : null,
