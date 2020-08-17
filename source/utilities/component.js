@@ -4,7 +4,7 @@ import { SIZING_ALTERNATIVES } from '~/constants/generic'
 // Get final className of component
 export const getClassName = (suffix, items) => {
   const classes = []
-  for (const item in items) items[item] && classes.push(`${item}-${items[item]}`)
+  for (const item in items) items[item] && classes.push(items[item] === true ? item : `${item}-${items[item]}`)
   if (suffix) classes.push(suffix)
   if (classes.length > 0) return classes.join(' ')
 }
