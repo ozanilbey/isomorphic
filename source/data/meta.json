@@ -18,14 +18,14 @@
 
   "msapplication-navbutton-color": "#4ad575",
   "msapplication-TileColor": "#4ad575",
-  "msapplication-TileImage": "/public/images/identity/icon-touch.png",
+  "msapplication-TileImage": "/images/identity/icon-touch.png",
 
   "twitter:card": "summary_large_image",
   "twitter:site": "@ozanilbey",
   "twitter:creator": "@ozanilbey",
   "twitter:title": "Isomorphic",
   "twitter:description": "ozanilbey's isomorphic web application boilerplate",
-  "twitter:image": "/public/images/identity/thumbnail.png",
+  "twitter:image": "/images/identity/thumbnail.png",
 
   "og:title": {
     "property": "og:title",
@@ -41,7 +41,7 @@
   },
   "og:image": {
     "property": "og:image",
-    "content": "/public/images/identity/thumbnail.png"
+    "content": "/images/identity/thumbnail.png"
   },
   "og:description": {
     "property": "og:description",
