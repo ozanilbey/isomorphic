@@ -49,11 +49,11 @@ Page.propTypes = {
   parentName: PropTypes.string
 }
 Page.Header = props => <Section semanticTag="header" {...props} />
-Page.Header.displayName = 'Header'
+Page.Header.displayName = 'Page.Header'
 Page.Section = props => <Section semanticTag="section" {...props} />
-Page.Section.displayName = 'Section'
+Page.Section.displayName = 'Page.Section'
 Page.Footer = props => <Section semanticTag="footer" {...props} />
-Page.Footer.displayName = 'Footer'
+Page.Footer.displayName = 'Page.Footer'
 
 // Export
 export default Page
