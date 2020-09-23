@@ -48,11 +48,11 @@ Page.propTypes = {
   name: PropTypes.string,
   parentName: PropTypes.string
 }
-Page.Header = props => <Section semanticTag="header" {...props} />
+Page.Header = forwardRef((props, ref) => <Section ref={ref} semanticTag="header" {...props} />)
 Page.Header.displayName = 'Page.Header'
-Page.Section = props => <Section semanticTag="section" {...props} />
+Page.Section = forwardRef((props, ref) => <Section ref={ref} semanticTag="section" {...props} />)
 Page.Section.displayName = 'Page.Section'
-Page.Footer = props => <Section semanticTag="footer" {...props} />
+Page.Footer = forwardRef((props, ref) => <Section ref={ref} semanticTag="footer" {...props} />)
 Page.Footer.displayName = 'Page.Footer'
 
 // Export
