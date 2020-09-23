@@ -29,6 +29,7 @@ const Section = forwardRef((props, ref) => {
   // Render
   return (
     <TagName
+      ref={ref}
       data-layout="section"
       {...semanticTagProperty}
       {...attributes}
