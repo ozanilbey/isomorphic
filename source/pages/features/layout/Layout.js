@@ -17,6 +17,7 @@ function Layout () {
   // Render
   return (
     <Page
+      isFullScreen
       name="layout"
       parentName="features">
       <Helmet>

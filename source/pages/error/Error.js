@@ -18,7 +18,9 @@ function Error () {
 
   // Render
   return (
-    <Page name="error">
+    <Page
+      isFullScreen
+      name="error">
       <Helmet>
         <title>Isomorphic | Error</title>
       </Helmet>

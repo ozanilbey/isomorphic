@@ -16,6 +16,7 @@ function Typography () {
   // Render
   return (
     <Page
+      isFullScreen
       name="typography"
       parentName="features">
       <Helmet>

@@ -28,7 +28,9 @@ function Features () {
       return <Typography />
     default:
       return (
-        <Page name="features">
+        <Page
+          isFullScreen
+          name="features">
           <Helmet>
             <title>Isomorphic | Features</title>
           </Helmet>
