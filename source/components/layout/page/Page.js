@@ -16,7 +16,7 @@ function Page (props) {
   // Data
   const className = getClassName(props.className, {
     decoration: props.isZebraStriped ? 'zebra-stripes' : null,
-    screen: props.isFullScreen
+    screen: props.isFullScreen ? 'full' : null
   })
 
   // Methods
